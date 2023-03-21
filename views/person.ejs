@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Person: <%= ID %></h1>
+    <h2>Query string value: <%= Qstr %></h2>
+    <% switch (check) {%>
+        <%case check == 1: %>
+            <% if (n < 0){ %>
+                <h1>Bienvenido Carlos</h1>
+            <% } %>
+            <%break%>
+        <%case check == 2: %>
+            <% if (n < 0){ %>
+                <h1>Hola Carlos</h1>
+             <% } %>
+        <%break%>
+            <%break%>
+        <%case check == 3: %>
+            <% if (n < 0){ %>
+                <h1>Adios Carlos</h1>
+            <% } %>
+            <%break%>
+    <%} %>
+</body>
+</html>
